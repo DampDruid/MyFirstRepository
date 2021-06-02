@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block script %}{% endblock %}
+</head>
+<body>
+<div id="content">
+    {% block header %}<h1 style="text-align: center">First Django Login Project</h1>{% endblock %}
+    <hr>
+    {% block content %}{% endblock %}
+    <hr>
+    <footer>
+        <small>Author: <a href="https://github.com/DampDruid">彭宇晖</a></small>
+    </footer>
+</div>
+</body>
+</html>
